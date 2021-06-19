@@ -15,6 +15,9 @@ public class MethodDeclaration {
 		// three parameters method
 		double mySum = md.sum(5.6, 4, 6);
 		System.out.println("Three nums sum is: " + mySum);
+		
+		// return random number
+		System.out.println("Your random number is: " + md.randomNumber());
 	}
 	
 	 	// create your first method here
@@ -28,5 +31,11 @@ public class MethodDeclaration {
 	
 	public double sum(double x, int y, int z) {
 		return x + y + z;
+	}
+	
+	// return random number
+	public int randomNumber() {
+		int randomNum = (int) (Math.random() * 50) + 1;
+		return randomNum;
 	}
 }
